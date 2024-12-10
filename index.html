@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Count js</title>
+    <style>
+      @keyframes blinking {
+        form {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+
+      /* The element to apply the animation to */
+      #heading::after {
+        content: "";
+        border-right: 3px solid red;
+        opacity: 1;
+        animation: blinking 600ms linear infinite;
+      }
+
+    </style>
   </head>
   <body>
     <div class="max-w-5xl mx-auto border-4 border-slate-900 mt-10">
@@ -14,7 +34,7 @@
           <h1 class="text-3xl">Hello, I am</h1>
           <h1
             id="heading"
-            class="text-5xl ms-10 font-bold after:content-[''] after:border-2 after:border-red-600 after:h-full"
+            class="text-5xl ms-10 font-bold"
             data-text="MD Torikul Islam"
             data-typespeed="300"
           ></h1>
