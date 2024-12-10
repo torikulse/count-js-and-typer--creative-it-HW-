@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Count js</title>
+  </head>
+  <body>
+    <div class="max-w-5xl mx-auto border-4 border-slate-900 mt-10">
+      <header class="p-4 bg-slate-900"></header>
+      <main class="p-10">
+        <div class="flex flex-col text-center gap-4">
+          <h1 class="text-3xl">Hello, I am</h1>
+          <h1
+            id="heading"
+            class="text-5xl ms-10 font-bold after:content-[''] after:border-2 after:border-red-600 after:h-full"
+            data-text="MD Torikul Islam"
+            data-typespeed="300"
+          ></h1>
+        </div>
+        <!-- counter -->
+        <div>
+          <h1
+            class="font-bold text-9xl text-center mt-10"
+            id="count"
+            data-countlimit="100000"
+            data-countspeed="300"
+          >
+            0
+          </h1>
+        </div>
+      </main>
+      <footer class="p-4 bg-slate-900 text-white">
+        <div>
+          Github:
+          <a
+            class="underline text-blue-400"
+            target="_blank"
+            href="https://github.com/torikulse"
+            >https://github.com/torikulse</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
